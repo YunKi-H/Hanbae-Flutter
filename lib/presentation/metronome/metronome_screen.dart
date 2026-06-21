@@ -833,10 +833,14 @@ class _SequenceStateBar extends StatelessWidget {
           ),
           child: Row(
             children: [
-              const Icon(
-                Icons.playlist_play_rounded,
-                color: AppColors.labelDefault,
-                size: 18,
+              SvgPicture.asset(
+                'assets/images/icon/Icon_Playlist.svg',
+                width: 16,
+                height: 16,
+                colorFilter: const ColorFilter.mode(
+                  AppColors.labelPrimary,
+                  BlendMode.srcIn,
+                ),
               ),
               const SizedBox(width: 8),
               Expanded(
